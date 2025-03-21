@@ -25,7 +25,7 @@ jobs:
       - run: docker build -t horatiuandrei/multi-server ./server
       - run: docker build -t horatiuandrei/multi-worker ./worker
 
-      - run: docker push -t horatiuandrei/multi-client
-      - run: docker push -t horatiuandrei/multi-nginx
-      - run: docker push -t horatiuandrei/multi-server
-      - run: docker push -t horatiuandrei/multi-worker
+      - run: docker push horatiuandrei/multi-client
+      - run: docker push horatiuandrei/multi-nginx
+      - run: docker push horatiuandrei/multi-server
+      - run: docker push horatiuandrei/multi-worker
