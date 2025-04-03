@@ -1,0 +1,14 @@
+apiVersion: cert-manager.io/v1
+
+kind: Certificate
+metadata:
+  name: rezult-ro-tls
+spec:
+  secretName: rezult-ro
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: rezult.ro
+  dnsNames:
+    - rezult.com
+    - www.rezult.com
