@@ -36,7 +36,7 @@ jobs:
         uses: 'google-github-actions/auth@v2'
         with:
           workload_identity_provider: 'projects/731457015652/locations/global/workloadIdentityPools/github/providers/my-repo'
-          service_account: 'my-service-account@udemy-docker-kubernetes-m-k8s.iam.gserviceaccount.com'
+          service_account: 'github-actions-deployer@udemy-docker-kubernetes-m-k8s.iam.gserviceaccount.com'
 
       - name: Google Cloud -> Set Project
         uses: 'google-github-actions/setup-gcloud@v2'
