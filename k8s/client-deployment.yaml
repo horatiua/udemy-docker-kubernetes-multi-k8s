@@ -20,4 +20,4 @@ spec:
 
 
 # kubectl apply -f k8s/
-# kubectl create secret generic PGPASSWORD --from-literal PGPASSWORD=PASSWORD
+# kubectl create secret generic pgpassword --from-literal PGPASSWORD=PASSWORD
