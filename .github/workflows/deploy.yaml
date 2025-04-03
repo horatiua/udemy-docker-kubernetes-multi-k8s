@@ -1,6 +1,6 @@
 # Auth to Google Cloud using Workload Identity Federation
 name: Deploy MultiK8s - Workload Identity Federation
-run: exit 1
+# run: exit 1
 on:
   push:
     branches:
