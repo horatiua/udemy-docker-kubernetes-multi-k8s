@@ -16,7 +16,7 @@ spec:
       secretName: rezult-ro
   rules:
     - host: rezult.ro
-    - http:
+      http:
         paths:
           - path: /?(.*)
             pathType: ImplementationSpecific
@@ -33,7 +33,7 @@ spec:
                 port:
                   number: 5000
     - host: www.rezult.ro
-    - http:
+      http:
         paths:
           - path: /?(.*)
             pathType: ImplementationSpecific
