@@ -66,6 +66,7 @@ jobs:
       - name: Apply
         run: |-
           kubectl apply -f k8s
+          kubectl apply -f k8s-prod
           kubectl set image deployments/client-deployment client=horatiuandrei/multi-client:${{ env.SHA }}
           kubectl set image deployments/server-deployment server=horatiuandrei/multi-server:${{ env.SHA }}
           kubectl set image deployments/worker-deployment worker=horatiuandrei/multi-worker:${{ env.SHA }}
